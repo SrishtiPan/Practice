@@ -1,0 +1,3 @@
+button.hamburgerButton = id:com.ebay.mobile:id/home
+input.searchTextField = id:com.ebay.mobile:id/search_box
+button.signInHamburger = id:com.ebay.mobile:id/logo
