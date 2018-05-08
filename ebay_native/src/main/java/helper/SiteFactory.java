@@ -1,17 +1,14 @@
 package helper;
 
 import action.addToCartAction;
-import action.checkoutAction;
 import action.loginAction;
 import action.productAction;
 import action.searchAction;
 import screens.cartScreen;
-import screens.checkoutScreen;
 import screens.homeScreen;
 import screens.loginScreen;
 import screens.productDetailScreen;
 import screens.searchResultScreen;
-import utils.CustomUtils;
 
 /**
  * To register Screen/action class objects to overcome object creation multiple times
@@ -22,10 +19,6 @@ public class SiteFactory {
 	
 	public cartScreen cartScreen(){
 		return new cartScreen(this);
-	}
-	
-	public checkoutScreen checkoutScreen(){
-		return new checkoutScreen(this);
 	}
 	
 	public homeScreen homeScreen(){
@@ -54,10 +47,6 @@ public class SiteFactory {
 	
 	public searchAction _SearchAction() {
 		return new searchAction(this);
-	}
-	
-	public checkoutAction _CheckoutAction() {
-		return new checkoutAction(this);
 	}
 	
 	public loginAction _LoginAction() {

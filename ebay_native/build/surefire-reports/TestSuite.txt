@@ -1,17 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 84.009 s <<< FAILURE! - in TestSuite
-RegisteredUser_CheckoutFlow(test.CheckoutTest)  Time elapsed: 82.305 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 240.046 s <<< FAILURE! - in TestSuite
+RegisteredUser_CheckoutFlow(test.CheckoutTest)  Time elapsed: 232.756 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'CHDSEZ3335D', ip: '10.64.108.240', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.5', java.version: '1.8.0_77'
+System info: host: 'VAIBHAV', ip: '192.168.43.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_66'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/vaibhav_singh17/ecli..., automationName: uiautomator2, deviceName: Pixel, javascriptEnabled: true, platform: ANDROID, platformName: ANDROID, platformVersion: 7.0}
-Session ID: 4b1c58c1-9954-4d92-9a4a-48a3d01499ef
-*** Element info: {Using=id, value=com.ebay.mobile:id/search_box}
-	at test.CheckoutTest.RegisteredUser_CheckoutFlow(CheckoutTest.java:21)
+Capabilities {app: C:\Users\Vaibhav\git\ebayMo..., automationName: uiautomator2, deviceName: Pixel, javascriptEnabled: true, platform: ANDROID, platformName: ANDROID, platformVersion: 7.0}
+Session ID: 7eba19b9-1476-44db-9b55-b7ec5450c2bc
+*** Element info: {Using=id, value=com.ebay.mobile:id/take_action}
+	at test.CheckoutTest.RegisteredUser_CheckoutFlow(CheckoutTest.java:24)
 

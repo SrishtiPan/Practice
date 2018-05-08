@@ -1,6 +1,7 @@
-text.timeLeft = id:vi-cdown_timeLeft
-text.price = id:prcIsum
-text.itemName = id:itemTitle
-text.sellerName = xpath:((//h2[contains(text(),'Seller information')]/following-sibling::div//a)[1])|(//div[contains(@class,'mbg')]/a)
-button.atc = xpath://a[contains(text(),'Add to cart')]
-button.goToCart = xpath://span[contains(text(),'Go to cart')]
+text.price = id:com.ebay.mobile:id/textview_item_price
+text.itemName = id:com.ebay.mobile:id/textview_item_name
+button.atc = id:com.ebay.mobile:id/button_bin
+picker.quantity = classs:android.widget.NumberPicker
+text.quantity = xpath://android.widget.EditText[@text='{0}']
+button.review = id:com.ebay.mobile:id/take_action
+image.loader = id:com.ebay.mobile:id/progress_bar

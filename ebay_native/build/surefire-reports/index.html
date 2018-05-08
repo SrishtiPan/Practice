@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>testng.xml</span>
+                    <span>C:\Users\Vaibhav\git\ebayMobileAutomation\ebay_native\src\main\resources\config\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CheckoutTest" hash-for-method="RegisteredUser_CheckoutFlow(helper.DataEntity@6342d610)">RegisteredUser_CheckoutFlow(helper.DataEntity@6342d610)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.CheckoutTest" hash-for-method="RegisteredUser_CheckoutFlow(helper.DataEntity@17273273)">RegisteredUser_CheckoutFlow(helper.DataEntity@17273273)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -124,19 +124,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="RegisteredUser_CheckoutFlow(helper.DataEntity@6342d610)">
-                  </a> <!-- RegisteredUser_CheckoutFlow(helper.DataEntity@6342d610) -->
+                  <a name="RegisteredUser_CheckoutFlow(helper.DataEntity@17273273)">
+                  </a> <!-- RegisteredUser_CheckoutFlow(helper.DataEntity@17273273) -->
                   <span class="method-name">RegisteredUser_CheckoutFlow</span>
-                  <span class="parameters">(helper.DataEntity@6342d610)</span>
+                  <span class="parameters">(helper.DataEntity@17273273)</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;CHDSEZ3335D&apos;, ip: &apos;10.64.108.240&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.5&apos;, java.version: &apos;1.8.0_77&apos;
+System info: host: &apos;VAIBHAV&apos;, ip: &apos;192.168.43.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_66&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/vaibhav_singh17/ecli..., automationName: uiautomator2, deviceName: Pixel, javascriptEnabled: true, platform: ANDROID, platformName: ANDROID, platformVersion: 7.0}
-Session ID: 4b1c58c1-9954-4d92-9a4a-48a3d01499ef
-*** Element info: {Using=id, value=com.ebay.mobile:id/search_box}
+Capabilities {app: C:\Users\Vaibhav\git\ebayMo..., automationName: uiautomator2, deviceName: Pixel, javascriptEnabled: true, platform: ANDROID, platformName: ANDROID, platformVersion: 7.0}
+Session ID: 7eba19b9-1476-44db-9b55-b7ec5450c2bc
+*** Element info: {Using=id, value=com.ebay.mobile:id/take_action}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -161,17 +161,17 @@ Session ID: 4b1c58c1-9954-4d92-9a4a-48a3d01499ef
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at utils.CustomUtils.getElement(CustomUtils.java:82)
-	at utils.CustomUtils.sendKeys(CustomUtils.java:131)
-	at screens.homeScreen.searchForItem(homeScreen.java:27)
-	at action.searchAction.searchForItem(searchAction.java:17)
-	at test.CheckoutTest.RegisteredUser_CheckoutFlow(CheckoutTest.java:21)
+	at utils.CustomUtils.getElement(CustomUtils.java:90)
+	at utils.CustomUtils.click(CustomUtils.java:156)
+	at screens.productDetailScreen.selectQuantity(productDetailScreen.java:42)
+	at action.productAction.verifyProductDetailsAndNavigateToCart(productAction.java:14)
+	at test.CheckoutTest.RegisteredUser_CheckoutFlow(CheckoutTest.java:24)
 	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:87)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1132)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:978)
 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
@@ -181,9 +181,9 @@ Session ID: 4b1c58c1-9954-4d92-9a4a-48a3d01499ef
 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
@@ -197,7 +197,7 @@ Session ID: 4b1c58c1-9954-4d92-9a4a-48a3d01499ef
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/vaibhav_singh17/eclipse/java-mars/Eclipse.app/Contents/MacOS/EBayAssignmentWS/ebay_native/src/main/resources/config/testng.xml</span>
+            <span class="header-content">C:\Users\Vaibhav\git\ebayMobileAutomation\ebay_native\src\main\resources\config\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -253,12 +253,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'RegisteredUser_CheckoutFlow')
 data.setCell(0, 2, 'test.CheckoutTest')
-data.setCell(0, 3, 82303);
+data.setCell(0, 3, 232751);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -270,15 +270,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">RegisteredUser_CheckoutFlow(helper.DataEntity@6342d610)</span>
+              <span class="reporter-method-name">RegisteredUser_CheckoutFlow(helper.DataEntity@17273273)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Launch Application</span>
-                <span class="reporter-method-output">Click on "Hamburger button in home screen"</span>
-                <span class="reporter-method-output">Click on "Sign in button in hamburger menu"</span>
-                <span class="reporter-method-output">Type "ebaytestassignment@eb.com" in "Hamburger button in home screen"</span>
-                <span class="reporter-method-output">Type "Infosys123" in "Search input in home screen"</span>
-                <span class="reporter-method-output">Click on "Sign in button in hamburger menu"</span>
-                <span class="reporter-method-output"> Tue May 08 20:08:47 IST 2018 Test Failed : RegisteredUser_CheckoutFlow</span>
+                <span class="reporter-method-output">Wed May 09 04:15:55 IST 2018 : Launch Application</span>
+                <span class="reporter-method-output">Wed May 09 04:15:58 IST 2018 : Click on "Hamburger button in home screen"</span>
+                <span class="reporter-method-output">Wed May 09 04:16:00 IST 2018 : Click on "Sign in button in hamburger menu"</span>
+                <span class="reporter-method-output">Wed May 09 04:16:04 IST 2018 : Type "ebaytestassignment@eb.com" in "email id field in sign in screen"</span>
+                <span class="reporter-method-output">Wed May 09 04:16:09 IST 2018 : Type "Infosys123" in "password field in sign in screen"</span>
+                <span class="reporter-method-output">Wed May 09 04:16:12 IST 2018 : Click on "Sign in button in sign in screen"</span>
+                <span class="reporter-method-output">Wed May 09 04:16:15 IST 2018 : Click on "fingerprint maybe later button"</span>
+                <span class="reporter-method-output">Wed May 09 04:16:25 IST 2018 : Click on "Search input1 in home screen"</span>
+                <span class="reporter-method-output">Wed May 09 04:16:30 IST 2018 : Type "65-inch TV" in "Search input2 in home screen"</span>
+                <span class="reporter-method-output">Wed May 09 04:17:12 IST 2018 : Verified invisibility of "loader image"</span>
+                <span class="reporter-method-output">Wed May 09 04:17:13 IST 2018 : Click on "Auto suggestion list for search item"</span>
+                <span class="reporter-method-output">Wed May 09 04:17:46 IST 2018 : Clicked on item SONY BRAVIA 65 INCH 65X9300D ULTRA HD 4K SMART LED TV +ONE YEAR DEALER WARRANTY</span>
+                <span class="reporter-method-output">Wed May 09 04:17:51 IST 2018 : Verified "Product name" contains "SONY BRAVIA 65 INCH 65X9300D ULTRA HD 4K SMART LED TV +ONE YEAR DEALER WARRANTY"</span>
+                <span class="reporter-method-output">Wed May 09 04:17:51 IST 2018 : Verified "Product price" contains "₹ 2,10,990"</span>
+                <span class="reporter-method-output">Wed May 09 04:17:54 IST 2018 : Click on "Add to cart button"</span>
+                <span class="reporter-method-output"> Wed May 09 04:19:02 IST 2018 Test Failed : RegisteredUser_CheckoutFlow</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -300,7 +309,7 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">RegisteredUser_CheckoutFlow(helper.DataEntity@6342d610)</span>
+                <span class="method-name">RegisteredUser_CheckoutFlow(helper.DataEntity@17273273)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

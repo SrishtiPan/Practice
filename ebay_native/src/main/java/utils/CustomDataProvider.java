@@ -30,10 +30,9 @@ public class CustomDataProvider {
 				String[] data=s.split("\\|");
 				DataEntity entity=new DataEntity();
 				entity.setSearchKeyword(data[1].trim());
-				entity.setScreenSize(data[2].trim());
-				entity.setQuantity(data[3].trim());
-				entity.setUserType(data[4].trim());
-				entity.setCredential(data[5].trim());
+				entity.setQuantity(data[2].trim());
+				entity.setUserType(data[3].trim());
+				entity.setCredential(data[4].trim());
 				dataList.add(entity);
 			}
 		} catch (FileNotFoundException e) {

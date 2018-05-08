@@ -12,8 +12,8 @@ public class loginScreen {
 	
 	Locator emailIdField=new Locator("text.emailId", "email id field in sign in screen");
 	Locator passwordFileld=new Locator("text.password", "password field in sign in screen");
-	Locator signInButton=new Locator("button.signIn", "Sign in button in hamburger menu");
-	Locator fingerprintMayBeLater=new Locator("button.maybelater", "fingerprint mabe later button");
+	Locator signInButton=new Locator("button.signIn", "Sign in button in sign in screen");
+	Locator fingerprintMayBeLater=new Locator("button.maybelater", "fingerprint maybe later button");
 			
 	
 	public void enterUserCredential(String credential) {

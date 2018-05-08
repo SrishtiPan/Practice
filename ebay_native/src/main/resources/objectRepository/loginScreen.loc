@@ -1,4 +1,4 @@
 text.emailId = id:com.ebay.mobile:id/edit_text_username
 text.password = id:com.ebay.mobile:id/edit_text_password
 button.signIn = id:com.ebay.mobile:id/button_sign_in
-button.maybelater = id:android:id/button2
+button.maybelater = xpath://android.widget.Button[@text='MAYBE LATER']

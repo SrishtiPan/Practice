@@ -18,19 +18,6 @@ public class searchAction  extends SiteFactory {
 		return this;
 	}
 
-	/**
-	 * verify srp
-	 */
-	public searchAction verifySearchResultScreen(String searchKeyword) {
-		sf.searchResultScreen().verifySearchResultScreen(searchKeyword);
-		return this;
-	}
-
-	public searchAction selectAndVerifySizeFilterOption(String screenSize) {
-		sf.searchResultScreen().selectAndVerifySizeFilterOption(screenSize);
-		return this;
-	}
-
 	public searchAction selectRandomItemFromProductList() {
 		sf.searchResultScreen().selectRandomItemFromProductList();
 		return this;

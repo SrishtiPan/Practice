@@ -50,16 +50,16 @@ public class ReportListener implements ITestListener {
 	public void onTestFailure(ITestResult arg0) {
 		test.get().setEndTime(Calendar.getInstance().getTime());
 		test.get().setAssertions(arg0.getThrowable().getMessage());
-//		TakesScreenshot scrShot =((TakesScreenshot)CustomUtils.c.get().driver);
-//		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-//		File DestFile=new File("build/report/images/"+arg0.getName()+arg0.getEndMillis()+".jpg");
-//        try {
-//			FileUtils.copyFile(SrcFile, DestFile);
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//		test.get().setScrURL(DestFile.getPath().replace("build\report\\", ""));
-//		test.get().setTestStatus("Fail");
+		TakesScreenshot scrShot =((TakesScreenshot)CustomUtils.c.get().driver);
+		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+		File DestFile=new File("build/report/images/"+arg0.getName()+arg0.getEndMillis()+".jpg");
+        try {
+			FileUtils.copyFile(SrcFile, DestFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		test.get().setScrURL(DestFile.getPath().replace("build\report\\", ""));
+		test.get().setTestStatus("Fail");
 		
 		System.out.println(" "+Calendar.getInstance().getTime()+" Test Failed : "+arg0.getName());
 		Reporter.log(" "+Calendar.getInstance().getTime()+" Test Failed : "+arg0.getName());  
@@ -109,6 +109,8 @@ public class ReportListener implements ITestListener {
 		test.get().setTestStatus("Pass");
 		System.out.println(" "+Calendar.getInstance().getTime()+" Test Passed : "+arg0.getName());
 		Reporter.log(" "+Calendar.getInstance().getTime()+" Test Passed : "+arg0.getName());
+
+		tests.add(test.get());
 		
 		Gson gson = new Gson();
         Type type = new TypeToken<List<TestObject>>() {}.getType();

@@ -1,3 +1,6 @@
 button.hamburgerButton = id:com.ebay.mobile:id/home
-input.searchTextField = id:com.ebay.mobile:id/search_box
+input.searchTextField1 = id:com.ebay.mobile:id/search_box
+input.searchTextField2 = id:com.ebay.mobile:id/search_src_text
 button.signInHamburger = id:com.ebay.mobile:id/logo
+image.loader = id:com.ebay.mobile:id/progress_bar
+text.autoSug = xpath://android.widget.ListView//android.widget.TextView[1]

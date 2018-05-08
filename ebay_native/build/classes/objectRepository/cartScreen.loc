@@ -1,5 +1,4 @@
-text.prodName = xpath://div[@id='ShopCart']//span[contains(@id,'_title')]
-text.prodPrice = xpath://div[@id='ShopCart']//div[@class='fw-b']
-text.selName = xpath://div[@id='ShopCart']//a[@class='mbg-id']
-text.unitCount = xpath://h2[text()='Cart summary']/following-sibling::span[contains(text(),'1 item')]
-button.proceedToCheckout = id:ptcBtnRight
+text.prodName = xpath://android.view.View[@text='{0}']
+text.prodPrice = xpath://android.view.View[@text='{0}']
+text.unitCount = xpath://android.widget.EditText[@text='{0}']
+button.proceedToCheckout = xpath://android.widget.Button[@text='Proceed to Pay']

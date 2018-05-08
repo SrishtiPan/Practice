@@ -1,11 +1,7 @@
 package action;
 
-import org.testng.Assert;
-import org.testng.Reporter;
-
+import helper.DataEntity;
 import helper.SiteFactory;
-import utils.CustomUtils;
-import utils.Locator;
 
 public class productAction  extends SiteFactory{
 	SiteFactory sf;
@@ -13,8 +9,9 @@ public class productAction  extends SiteFactory{
 		this.sf=siteFactory;
 	}
 
-	public productAction verifyProductScreenAndNavigateToCart() {
-		sf.productDetailScreen().verifyProductScreenAndNavigateToCart();
+	public productAction verifyProductDetailsAndNavigateToCart(DataEntity data) {
+		sf.productDetailScreen().verifyProductDetailsAndNavigateToCart();
+		sf.productDetailScreen().selectQuantity(data.getQuantity());
 		return this;
 	}
 }

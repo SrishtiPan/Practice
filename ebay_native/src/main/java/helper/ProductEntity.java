@@ -9,11 +9,18 @@ public class ProductEntity {
 	private String productName;
 	private String productPrice;
 	private String sellerName;
+	public String quantity;
 	public String getProductName() {
 		return productName;
 	}
 	public void setProductName(String productName) {
 		this.productName = productName;
+	}
+	public String getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
 	}
 	public String getProductPrice() {
 		return productPrice;

@@ -1,7 +1,5 @@
 package screens;
 
-import org.openqa.selenium.Keys;
-
 import helper.SiteFactory;
 import utils.CustomUtils;
 import utils.Locator;
@@ -16,16 +14,20 @@ public class homeScreen {
 	 * xpath references
 	 */
 	Locator hamburgerButton=new Locator("button.hamburgerButton", "Hamburger button in home screen");
-	Locator searchField=new Locator("input.searchTextField", "Search input in home screen");
+	Locator searchField1=new Locator("input.searchTextField1", "Search input1 in home screen");
+	Locator searchField2=new Locator("input.searchTextField2", "Search input2 in home screen");
 	Locator hamburgerSignInButton=new Locator("button.signInHamburger", "Sign in button in hamburger menu");
-	
+	Locator searchLoader = new Locator("image.loader", "loader image");
+	Locator autoSuggestion = new Locator("text.autoSug", "Auto suggestion list for search item");
 	/**
 	 * Method to search product
 	 * @param searchKeyword
 	 */
 	public void searchForItem(String searchKeyword) {
-		CustomUtils.sendKeys(searchField,searchKeyword);
-		CustomUtils.getElement(searchField).sendKeys(Keys.ENTER);
+		CustomUtils.click(searchField1);
+		CustomUtils.sendKeys(searchField2,searchKeyword);
+		CustomUtils.verifyNotVisible(searchLoader);
+		CustomUtils.click(autoSuggestion);
 	}
 
 	

@@ -1,8 +1,11 @@
 package reportingUtils;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+
+import org.testng.Reporter;
 
 /**
  * Class created to creat json using gson
@@ -22,7 +25,7 @@ public class TestObject {
 		return assertions;
 	}
 	public void setAssertions(String assertions) {
-		this.assertions.add(assertions+"<br/>");
+		this.assertions.add(assertions+"\n");
 	}
 	public void setMsg(List<String> msg) {
 		this.msg = msg;
@@ -61,6 +64,7 @@ public class TestObject {
 		return msg;
 	}
 	public void setMsg(String msg) {
-		this.msg.add(msg+"<br/>");
+		this.msg.add(Calendar.getInstance().getTime()+" : "+msg+"\n");
+		Reporter.log(Calendar.getInstance().getTime()+" : "+msg);
 	}
 }

@@ -55,13 +55,22 @@ function load() {
 	    var text10 = document.createTextNode(mydata[i].scrURL);
 	    
 	    var DOM_img = document.createElement("img");
+	    if(mydata[i].scrURL!=null)
 	    DOM_img.src = (mydata[i].scrURL).replace("build\\report\\", "")
-
+	   
 	    var text11 = document.createTextNode("Message");
-	    var text12 = document.createTextNode(mydata[i].msg);
+	    var txt="";
+	    for(var x in mydata[i].msg)
+	    	txt+=mydata[i].msg[x]+"<br/>";
+	    
+	    var text12 = document.createTextNode(txt);
 	   
 	    var text13 = document.createTextNode("Assert Messages");
-	    var text14 = document.createTextNode(mydata[i].assertions);
+	    var txt1="";
+	    for(var x in mydata[i].assertions)
+	    	txt1+=mydata[i].assertions[x]+"<br/>";
+	    
+	    var text14 = document.createTextNode(txt1);
 	   
 	    td0.colSpan = "2";
 	    td0.appendChild(text0);
@@ -85,9 +94,11 @@ function load() {
 	    
 	    td11.appendChild(text11);
 	    td12.appendChild(text12);
+	    td12.innerHTML=txt;
 	    
 	    td13.appendChild(text13);
-	    td14.appendChild(text14);
+	  //  td14.appendChild(text14);
+	    td14.innerHTML=txt1;
 	    
 	    tr.appendChild(td0);
 	    tr1.appendChild(td1);

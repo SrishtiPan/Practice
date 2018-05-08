@@ -1,3 +1,3 @@
-list.searchResult = xpath:(//li[@class='s-item']//h3)|(//ul[@id='ListViewInner']/li//h3)
-checkbox.tvSizeFilter = xpath://div[contains(text(),'{0}')]
-button.rightScrollFilter = xpath:((//span[contains(@class,'srp-chevron-right')])|(//button[contains(@class,'icon-chevron-right')]))[last()]
+list.searchResult = id:com.ebay.mobile:id/textview_item_title
+list.itemPrice = xpath://*[@text='{0}']/following-sibling::*//android.widget.TextView[@resource-id='com.ebay.mobile:id/textview_item_price']
+text.adContainer = id:com.ebay.mobile:id/google_text_ad_container

@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategrey;
+    background-color: #4f3f2fe6;
     color: azure;
     font-size: 1.1em;
 }
@@ -9,7 +9,11 @@ h1 {
 table, th, td{
 	border: 1px solid white;
 	border-color: white;
+	whitespace:pre;
 }
 table{
 	width: 80%;
+}
+img{
+	height: 20%;
 }
